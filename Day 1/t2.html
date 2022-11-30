@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var sum = 0, n, inp;
+        // do {
+        //     n = parseInt(prompt("Amount of Numbers to sum ?"));
+        //     if (isNaN(n)) {
+        //         alert("please enter a number")
+        //     }
+        // } while (isNaN(n));
+
+        do {
+            do {
+                inp = parseInt(prompt("enter your number please"));
+                if (isNaN(inp)) {
+                    alert("please enter a number")
+                }
+            } while (isNaN(inp));
+            sum += inp
+            alert("Sum = " + sum);
+            // n--;
+
+        } while (sum < 100 && inp != 0 );
+
+    </script>
+</body>
+
+</html>

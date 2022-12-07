@@ -1,4 +1,3 @@
-
 var img = document.getElementById('img')
 var start = 2;
 var timerId;
@@ -12,8 +11,9 @@ function next() {
     }
 }
 function prev() {
-    if (start > 0) {
-        newSource(start--)
+    if (start > 1) {
+        start--;
+        newSource(start)
     }
 }
 function ss() {
@@ -25,7 +25,6 @@ function ss() {
             next()
         }
     }, 1000)
-
 }
 function stop() {
     clearInterval(timerId);

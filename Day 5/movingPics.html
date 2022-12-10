@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 600px;
+            border: solid red 5px;
+            position: relative;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        h1 {
+            color: blue;
+
+        }
+
+        button {
+            width: fit-content;
+            margin: 10px;
+            padding: 5px;
+            font-size: larger;
+
+        }
+
+        h1 {
+            position: absolute;
+
+        }
+    </style>
+    <script src="js/movingPics.js"> </script>
+</head>
+
+<body style="position: relative;">
+    <div class="container">
+        <img style="position: absolute; top: 275px; left: 550px;" src="movingPic/icon1.gif" alt="">
+        <img style="position: absolute; top: 275px;left: 0;" src="movingPic/icon2.gif" alt="">
+        <img style="position: absolute; top: 550px; left: 275px;" src="movingPic/TOP.JPG" alt="">
+    </div>
+
+    <button id="start">Start ▶️</button>
+    <button id="stop">Pause ⏸</button>
+</body>
+<h1 style="left: 650px; top: 50px;">Flower img X = <span></span> Y = <span></span></h1>
+<h1 style="left: 650px; top: 100px;">Feather img X = <span></span> Y = <span></span> </h1>
+<h1 style="left: 650px; top: 150px;">Top img X = <span></span> Y = <span></span> </h1>
+
+</html>

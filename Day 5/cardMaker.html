@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+        }
+
+        body {
+            text-align: center;
+            background-color: rgb(231, 194, 10);
+        }
+
+        div>div {
+            display: flex;
+            justify-content: center
+        }
+
+        div>div>div {
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="border:groove goldenrod ;">Generate Get Well Soon</h1>
+    <form style="border: double brown 5px ; width: fit-content; margin: auto; padding: 10px;">
+
+        <div>
+            <div>
+                <div>
+                    <label for="1"><img id="i1" src="CardMaker/gws.jpg"></label>
+                    <input type="radio" name="img" id="1">
+                </div>
+                <div>
+                    <label for="2"><img id="i2" src="CardMaker/gws2.jpg"></label>
+                    <input type="radio" name="img" id="2">
+                </div>
+                <div>
+                    <label for="3"><img id="i3" src="CardMaker/gws3.jpg"></label>
+                    <input type="radio" name="img" id="3">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="4"><img id="i4" src="CardMaker/gwsf.jpg"> </label>
+                    <input type="radio" name="img" id="4">
+                </div>
+                <div>
+                    <label for="5"><img id="i5" src="CardMaker/gwsf2.jpg"></label>
+                    <input type="radio" name="img" id="5">
+                </div>
+                <div>
+                    <label for="6"><img id="i6" src="CardMaker/gwsf3.jpg"></label>
+                    <input type="radio" name="img" id="6">
+                </div>
+            </div>
+        </div>
+        <h1 style="color: rgb(20, 130, 20) ;">Personal Message</h1>
+        <textarea name="mesg" id="txt" cols="30" rows="10"></textarea>
+        <input style="display: block; margin: auto;" type="button" id="gen" value="Generate">
+        <span style="color: red;"><strong id="warn"></strong></span>
+    </form>
+    <script src="js/cardMaker.js"></script>
+</body>
+
+</html>

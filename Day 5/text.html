@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Text Style</title>
+    <script src="js/text.js"></script>
+    <style>
+        p {
+            border: solid 3px black;
+            padding: 5px;
+        }
+
+        th {
+            padding: 5px;
+            border: solid;
+        }
+
+        td {
+            padding: 5px;
+            text-align: center;
+            letter-spacing: normal;
+            text-indent: 0%;
+            text-transform: capitalize;
+            text-decoration: dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="mytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sit itaque, harum dolorem quo sed
+        inventore
+        voluptatum ratione aut laborum, iste corrupti mollitia quia? Dicta obcaecati a molestias optio earum.</p>
+
+    <table>
+
+        <thead>
+            <th>font Family</th>
+            <th>Text Align</th>
+            <th>Line Height</th>
+            <th>Letter Spacing</th>
+            <th>Text Indent</th>
+            <th>Text Transform</th>
+            <th>Text Decoration</th>
+        </thead>
+        <tr>
+            <td><input type="radio" id="arial" name="font-family"><label for="arial">arial</label></td>
+            <td><input type="radio" id="left" name="text-align"><label for="left">left</label></td>
+            <td><input type="radio" id="hnormal" name="line-height"><label for="hnormal">normal</label></td>
+            <td><input type="radio" id="snormal" name="letter-spacing"><label for="snormal">normal</label></td>
+            <td><input type="radio" id="0px" name="text-indent"><label for="0px">0px</label></td>
+            <td><input type="radio" id="tnone" name="text-transform"><label for="tnone">none</label></td>
+            <td><input type="radio" id="dnone" name="text-decoration"><label for="dnone">none</label></td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="courier" name="font-family"><label for="courier">courier</label></td>
+            <td><input type="radio" id="center" name="text-align"><label for="center">center</label></td>
+            <td><input type="radio" id="10px" name="line-height"><label for="10px">10px</label></td>
+            <td><input type="radio" id="-1px" name="letter-spacing"><label for="-1px">-1px</label></td>
+            <td><input type="radio" id="5px" name="text-indent"><label for="5px">5px</label></td>
+            <td><input type="radio" id="capitalize" name="text-transform"><label for="capitalize">capitalize</label>
+            </td>
+            <td><input type="radio" id="line-through" name="text-decoration">
+                <label for="line-through">line-through</label>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="georgia" name="font-family"><label for="georgia">georgia</label></td>
+            <td><input type="radio" id="right" name="text-align"><label for="right">right</label></td>
+            <td><input type="radio" id="15px" name="line-height"><label for="15px">15px</label></td>
+            <td><input type="radio" id="2px" name="letter-spacing"><label for="2px">2px</label></td>
+            <td><input type="radio" id="16px" name="text-indent"><label for="16px">16px</label></td>
+            <td><input type="radio" id="uppercase" name="text-transform"><label for="uppercase">uppercase</label></td>
+            <td><input type="radio" id="overline" name="text-decoration"><label for="overline">overline</label></td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
